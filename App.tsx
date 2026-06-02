@@ -19,8 +19,8 @@ export default function App() {
 
   if (loading) {
     return (
-      <SafeAreaView>
-        <View>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.center}>
           <ActivityIndicator size="large" />
           <Text>Buscando pokemons...</Text>
         </View>
@@ -30,8 +30,8 @@ export default function App() {
 
   if (error) {
     return (
-      <SafeAreaView>
-        <View>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.center}>
           <Text>{error}</Text>
         </View>
       </SafeAreaView>
@@ -55,6 +55,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
+  },
+  center: {
+    flex: 1,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   flatList: {
     flex: 1,
