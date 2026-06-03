@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 18,
     color: "rgba(0,0,0,0.5)",
-    textTransform: 'capitalize'
+    textTransform: "capitalize",
   },
   cardImageContainer: {
     width: "100%",
